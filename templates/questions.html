@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/questions.css') }}">
+    <title>Teste</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1 id="number">{{ count }}</h1>
+            <h1>° Pergunta</h1>
+        </div>
+    </header>
+    <main>
+        <div class="question">
+            <span>
+                {{ pergunta }}
+            </span>
+        </div>
+
+        <form class="test">
+            <span class="span">Seleciona a resposta humana:</span>
+            
+            <div class="resp box-input">
+                <textarea class="input input-resp" type="text" id="ia" name="resp-1" disabled>{{ ia }}</textarea>
+            </div>
+
+            <div class="resp box-input">
+                <textarea class="input input-resp" type="text" id="humano" name="resp-2" disabled>{{ humano }}</textarea>
+            </div>
+
+            <div class="opinion box-input">
+                <label class="label-input" for="opinion">Deixe sua opinião (opcional)</label>
+                <textarea class="input" placeholder="Marquei essa opção porque ..." type="text" id="opinion" name="opinion"></textarea>
+            </div>
+
+            <div class="submit box-input">
+                <input class="submit-input" id="finish" type="button" value="Finalizar">
+                <input class="submit-input" id="next" type="button" value="Proximo">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <span>META 2025 - IÁgora</span>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/questions.js') }}"></script>
+</body>
+</html>

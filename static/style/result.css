@@ -1,0 +1,89 @@
+body
+{
+    font-size: 1rem;
+}
+
+.bars, .message
+{
+    margin-top: 40px;
+}
+
+.bar
+{
+    margin-top: 20px;
+}
+
+.box
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    height: 35px;
+    background-color: #ffffff10;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress
+{
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    width: 0;
+    background-color: #ffffff10;
+    justify-content: end;
+    align-items: center;
+  border-radius: 0; /* sem borda própria, usa a do container */
+    transition: all 1000ms;
+}
+
+.percent
+{
+    color: #ffffff05;
+    z-index: 10;
+    margin-left: 7px;
+    transition: all 2000ms;
+}
+
+.bar-circle
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bar-circle strong
+{
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+
+.circle {
+    width: 140px;
+}
+
+.bg {
+    fill: none;
+    stroke: #ffffff10;
+    stroke-width: 3.8;
+}
+
+.cprogress {
+    fill: none;
+    stroke: #ffffff10;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    transition: all 1800ms;
+}
+
+.text {
+    fill: #ffffff10;
+    font-size: .5em;
+    font-weight: bold;
+    text-anchor: middle;        /* centraliza horizontal */
+    dominant-baseline: middle;  /* centraliza vertical */
+}

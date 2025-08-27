@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
+    <title>IÁgora</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>
+                IÁgora
+            </h1>
+        </div>
+        <div class="sub-title">
+            <span class="sub-title-1">
+                A IA quer enganar você !
+            </span>
+            <span class="sub-title-2">
+                Desvende esse desafio !
+            </span>
+        </div>
+    </header>
+    <main>
+        <form class="login" action="/cadastrar" method="POST">
+            <div class="name box-input">
+                <label class="label-input" for="name">Nome</label>
+                <input class="input" placeholder="Insira seu nome" type="text" id="name" name="name" required>
+            </div>
+
+            <div class="gender box-input">
+                <label class="label-input" for="gender">Gênero</label>
+                <div class="gender-radios">
+                    <div class="male">
+                        <input class="input-radio" type="radio" value="masculino" name="gender" required>
+                        <span>Masculino</span>
+                    </div>
+                    <div class="female">
+                        <input class="input-radio" type="radio" value="feminino" name="gender" required>
+                        <span>Feminino</span>
+                    </div>
+                    <div class="other">
+                        <input class="input-radio" type="radio" value="outro" name="gender" required>
+                        <span>Prefiro não dizer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="age box-input">
+                <label class="label-input" for="name">Idade</label>
+                <div class="age-radios">
+                    <div class="male">
+                        <input class="input-radio" type="radio" value="até 18 anos" name="age" required>
+                        <span>Até 18 anos</span>
+                    </div>
+                    <div class="female">
+                        <input class="input-radio" type="radio" value="até 31 anos" name="age" required>
+                        <span>Até 31 anos</span>
+                    </div>
+                    <div class="other">
+                        <input class="input-radio" type="radio" value="acima de 31 anos" name="age" required>
+                        <span>Acima de 31 anos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formation box-input">
+                <label class="label-input" for="formation">Formação</label>
+                <select class="input" type="text" id="formation" name="formation" required>
+                    <option value="" disabled selected>Escolha uma formação</option>
+                        <option value="Ensino Fundamental">Ensino Fundamental</option>
+                        <option value="Ensino Médio">Ensino Médio</option>
+                        <option value="Técnico">Curso Técnico</option>
+                        <option value="Graduação">Graduação</option>
+                        <option value="Pós-graduação">Pós-graduação</option>
+                        <option value="Mestrado">Mestrado</option>
+                        <option value="Doutorado">Doutorado</option>
+                </select>
+            </div>
+
+            <div class="ocupation box-input">
+                <label class="label-input" for="ocupation">Ocupação</label>
+                <select class="input" type="text" id="ocupation" name="ocupation" required>
+                    <option value="" disabled selected>Escolha uma ocupação</option>
+                    <option value="Professor">Professor</option>
+                    <option value="Médico">Médico</option>
+                    <option value="Enfermeiro">Enfermeiro</option>
+                    <option value="Engenheiro">Engenheiro</option>
+                    <option value="Programador">Programador</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Psicólogo">Psicólogo</option>
+                    <option value="Advogado">Advogado</option>
+                    <option value="Empresário">Empresário</option>
+                    <option value="Autônomo">Autônomo</option>
+                    <option value="Estudante">Estudante</option>
+                    <option value="Desempregado">Desempregado</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="submit box-input">
+                <input class="submit-input" type="submit" value="Entrar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <span>META 2025 - IÁgora</span>
+    </footer>
+</body>
+</html>

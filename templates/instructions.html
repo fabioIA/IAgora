@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/instructions.css') }}">
+    <title>Instruções</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>
+                Instruções
+            </h1>
+        </div>
+        <div class="sub-title">
+            <span class="sub-title-1">
+                A IA quer realizar
+            </span>
+            <span class="sub-title-2">
+                o Teste de Turing !
+            </span>
+        </div>
+    </header>
+    <main>
+        <form class="form-instructions" action="/carregar">
+            <ul class="instructions">
+                <li>
+                    A IA irá escolher uma pergunta aleatoriamente.
+                </li>
+                <li>
+                    Essa pergunta terá duas respostas: uma escrita por um humano e outra por uma IA.
+                </li>
+                <li>
+                    Sua missão é escolher qual delas é a resposta humana.
+                </li>
+                <li>
+                    Você pode encerrar o desafio quando quiser, após analisar pelo menos uma pergunta.
+                </li>
+
+                <li>
+                    Caso não saiba responder, clique em "Próximo" para pular.
+                </li>
+            </ul>
+
+            <br><br>
+            <span class="span">
+                Ao concluir o teste, sua pontuação será exibida. Desejamos boa sorte !
+            </span>
+
+            <div class="submit box-input">
+                <input class="submit-input" type="submit" value="Iniciar desafio">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <span>META 2025 - IÁgora</span>
+    </footer>
+</body>
+</html>

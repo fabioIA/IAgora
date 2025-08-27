@@ -1,0 +1,24 @@
+.title
+{
+    font-size: 17px;
+}
+
+.sub-title
+{
+    font-size: 1.3rem;
+}
+
+.instructions, .instructions li, .span
+{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.instructions li{
+    margin-left: 15px;
+}
+
+.submit
+{
+    margin-top: 40px;
+}

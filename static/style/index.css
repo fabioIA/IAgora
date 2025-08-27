@@ -1,0 +1,30 @@
+.title
+{
+    font-size: 2rem;
+}
+
+.age, .gender
+{
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.age-radios,.gender-radios
+{
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 0.5px solid #CCCDCC80;
+}
+
+.age-radios div:not(:first-child), .gender-radios div:not(:first-child)
+{
+    margin-top: 6px;
+}
+
+.label-input
+{
+    width: 55px;
+    display: flex;
+    align-items: center;
+}

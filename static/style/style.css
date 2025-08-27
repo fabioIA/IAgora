@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Inter', sans-serif;
+    /*font-family: 'Orbitron', sans-serif;*/
+    /*font-family: 'Chakra Petch', sans-serif;*/
+    width: 100vw;
+    height: 100vh;
+    background-color: #0D1117;
+    color: #E2E8F0;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main
+{
+    padding: 2rem;
+    flex-grow: 1;
+    width: 100%;  
+    max-width: 420px; 
+}
+
+footer
+{
+    text-align: center;
+    color: #ffffff90;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sub-title
+{
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+
+.box-input
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.input
+{
+    height: 40px;
+    background: none;
+    color: white;
+    border: 0.5px solid #CCCDCC80;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    margin-top: 3px;
+}
+
+select option
+{
+    background-color: #181B1F;
+}
+
+.input-radio
+{
+    height: 16px;
+    width: 16px;
+}
+
+.submit-input
+{
+    margin-top: 30px;
+    height: 42px;
+    font-size: 1.3rem;
+    background-color: #3B82F6;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all 100ms;
+    cursor: pointer;
+}
+
+.submit-input:hover
+{
+    opacity: 0.8;
+}
