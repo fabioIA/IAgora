@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "id-pergunta": 26,
+        "chatgpt": "Respiro fundo e, se precisar, tomo um analgésico leve.",
+        "gemini": "Primeiro tento relaxar, se não passar, vou atrás de um remédio.",
+        "deepseek": "Quando sinto alguma \"dor\" no sistema, aciono uns protocolos de reparo pra voltar ao normal."
+    },
+    {
+        "id-pergunta": 1,
+        "chatgpt": "De não ter investido mais tempo nas pessoas que amo antes que fosse tarde.",
+        "gemini": "Me arrependo de algumas chances que não tomei por medo.",
+        "deepseek": "Não ter aproveitado mais as oportunidades que tive."
+    },
+    {
+        "id-pergunta": 42,
+        "chatgpt": "Paciente, boas receitas e experimentar até acertar.",
+        "gemini": "O segredo é cozinhar com amor (e um pouco de alho, né?), mas também testar e não ter medo de errar!",
+        "deepseek": "Acho que o segredo é o amor e a atenção em cada passo da receita."
+    }
+]

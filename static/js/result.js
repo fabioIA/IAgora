@@ -59,64 +59,68 @@ async function carregar_dados() {
             }   
         });
 
-        document.getElementById("acertos").innerHTML = `${humano[0]} de ${humano[0] + humano[1]} acerto(s)`
+        //document.getElementById("acertos").innerHTML = `${humano[0]} de ${humano[0] + humano[1]} acerto(s)`
 
         let prcentHumano = (humano[0]/(humano[0] + humano[1]))
         let prcentChatgpt = chatgpt[0]/(chatgpt[0] + chatgpt[1])
         let prcentGemini = gemini[0]/(gemini[0] + gemini[1])
         let prcentDeepseek = deepseek[0]/(deepseek[0] + deepseek[1])
-
         var mediaIas = (prcentGemini + prcentChatgpt + prcentDeepseek) / 3
         
-        var lenghts = [
-            (prcentHumano) * 100, 
-            (prcentHumano - mediaIas) * 100, 
-            (prcentHumano - prcentChatgpt) * 100, 
-            (prcentHumano - prcentGemini) * 100,
-            (prcentHumano - prcentDeepseek) * 100,
-        ]
-        var count = 0;
+        const ctx = document.getElementById('graph').getContext('2d');
 
-        // Barra de progresso retuangular
-        document.querySelectorAll(".progress").forEach((el) => {
-            const percent = el.parentElement.querySelector(".percent"); 
+        const dados = {
+            labels: ['IAs', 'Chatgpt', 'Gemini', 'DeepSeek'],
+            datasets: [{
+            label: 'Variação (%)',
+            data: [parseInt((prcentHumano - mediaIas) * 100), parseInt((prcentHumano - prcentChatgpt) * 100), parseInt((prcentHumano - prcentGemini) * 100), parseInt((prcentHumano - prcentDeepseek) * 100)],
+            backgroundColor: function(ctx) {
+                const valor = ctx.dataset.data[ctx.dataIndex];
+                return valor >= 0 ? '#22c55e' : '#EF4444';
+            },
+            borderRadius: 6,
+            }]
+        };
 
-            console.log(lenghts[count]);
-            
-            if(parseInt(lenghts[count]) > 0)
-            {
-                el.style.backgroundColor = '#22c55e'
-
-                for (let i = 0; i <= parseInt(lenghts[count]); i++) 
-                {
-                    setTimeout(() => {
-                        el.style.width = `${i}%`
-                    }, 700*(count+1));
-
-                    percent.innerHTML = `${i}%`
-                    percent.style.color = '#fff'
+        const opcoes = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+            legend: { display: false },
+            tooltip: {
+                callbacks: {
+                label: context => `${context.parsed.y}%`
                 }
-                count+=1
+            },
+            datalabels: {
+                anchor: 'center',
+                align: 'center',
+                formatter: value => `${value}%`,
+                color: 'white',
+                font: { weight: 'bold' }
             }
-            else
-            { 
-                if(Number(lenghts[count] == 0))
-                    percent.innerHTML = "0%"
-                else
-                    el.style.backgroundColor = '#EF4444'
-
-                for (let i = 0; i <= -parseInt(lenghts[count]); i++) 
-                {
-                    setTimeout(() => {
-                        el.style.width = `${i}%`
-                    }, 700*(count+1));
-
-                    percent.innerHTML = `-${i}%`
-                    percent.style.color = '#fff'
-                }
-                count+=1
+            },
+            scales: {
+            y: {
+                beginAtZero: true,
+                grid: { display: false },
+                border: { display: false },
+                ticks: { display: false }
+            },
+            x: {
+                border: { display: false },
+                ticks: { maxRotation: 90, minRotation: 45 },
+                grid: { display: false }
             }
-        })
+            }
+        };
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: dados,
+            options: opcoes,
+            plugins: [ChartDataLabels]
+        });
 
         let sum = 0.0
         mediaPessoas.forEach(el => {
@@ -126,41 +130,44 @@ async function carregar_dados() {
                 sum = sum + el.acertos / (el.acertos + el.erros)
         })
 
-        let media = sum / mediaPessoas.length
-        let acimaMedia = parseInt((prcentHumano - media) * 100)
-
-
-        document.getElementById("message").innerHTML = messageMedia(acimaMedia)
+        //Mensagem
+        //document.getElementById("message").innerHTML = messageMedia(prcentHumano)
 
         var p
+        prcentHumano = parseInt(prcentHumano * 100)
         // Barra de progresso circular
-        if(acimaMedia > 0)
+        if(prcentHumano > 0)
         {
-            document.getElementById("percentCircle").innerHTML = `Você está ${acimaMedia}% acima da média`
-            p = Math.max(0, Math.min(100, acimaMedia)); // limita entre 0 e 100
+            document.getElementById("percentCircle").innerHTML += `, você acertou ${prcentHumano}% das vezes`
+            p = Math.max(0, Math.min(100, prcentHumano)); // limita entre 0 e 100
             document.querySelector('.text').textContent = p + "%";
             document.querySelector(".text").style.fill = '#22c55e'
             document.querySelector(".cprogress").style.stroke = '#22c55e'
-
         }
-        else
+        else if(prcentHumano < 0)
         {
-            document.getElementById("percentCircle").innerHTML = `Você está ${-acimaMedia}% abaixo da média`
-            p = Math.max(0, Math.min(100, -acimaMedia)); // limita entre 0 e 100
+            document.getElementById("percentCircle").innerHTML += `, você acertou ${-prcentHumano}% das vezes`
+            p = Math.max(0, Math.min(100, -prcentHumano)); // limita entre 0 e 100
             document.querySelector('.text').textContent = `-${p}%`;
             document.querySelector(".text").style.fill = '#EF4444'
             document.querySelector(".cprogress").style.stroke = '#EF4444'
+        }
+        else
+        {
+            document.getElementById("percentCircle").innerHTML += ', você não acertou nenhuma vez'
+            document.querySelector('.text').textContent = '0%';
+            document.querySelector(".text").style.fill = '#000'
         }
 
         document.querySelector('.cprogress').style.strokeDashoffset = 100 - p;
     });
 }
 
-function messageMedia(acimaMedia) {
-    if (acimaMedia < 0) return "Continue praticando! Você ainda pode superar a média."
-    else if (acimaMedia < 10) return "Você ficou um pouco acima da média. Bom começo!"
-    else if (acimaMedia < 25) return "Parabéns! Você está bem acima da média."
-    else if (acimaMedia < 50) return "Excelente! Sua taxa de acerto mostra que você tem um talento especial."
-    else if (acimaMedia < 70) return "Incrível! Você está no topo, com desempenho muito acima da média."
+function messageMedia(prcentHumano) {
+    if (prcentHumano < 0) return "Continue praticando! Você ainda pode superar a média."
+    else if (prcentHumano < 10) return "Você ficou um pouco acima da média. Bom começo!"
+    else if (prcentHumano < 25) return "Parabéns! Você está bem acima da média."
+    else if (prcentHumano < 50) return "Excelente! Sua taxa de acerto mostra que você tem um talento especial."
+    else if (prcentHumano < 70) return "Incrível! Você está no topo, com desempenho muito acima da média."
     else return "Lendário! Seu desempenho está muito além da média, poucos chegam nesse nível."
 }

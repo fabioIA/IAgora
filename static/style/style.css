@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap');
 
 *
 {
@@ -9,32 +7,51 @@
     box-sizing: border-box;
 }
 
+#main{
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: solid 1px #C4C4C4;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 0 0 black 8%;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 body
 {
     font-family: 'Inter', sans-serif;
-    /*font-family: 'Orbitron', sans-serif;*/
-    /*font-family: 'Chakra Petch', sans-serif;*/
     width: 100vw;
     height: 100vh;
-    background-color: #0D1117;
-    color: #E2E8F0;
-    font-size: 0.7rem;
+    background-color: #f5f5f5;
+    color: #111827;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 header
 {
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+#logo
+{
+    width: 120px;
+}
+
 main
 {
-    padding: 2rem;
     flex-grow: 1;
     width: 100%;  
     max-width: 420px; 
@@ -43,9 +60,9 @@ main
 footer
 {
     text-align: center;
-    color: #ffffff90;
-    margin-bottom: 10px;
-    font-size: 1rem;
+    color: #00000060;
+    margin-top: 20px;
+    font-size: 12px;
 }
 
 .title
@@ -53,16 +70,16 @@ footer
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 
 .sub-title
 {
     font-style: italic;
     display: flex;
+    text-align: center;
     flex-direction: column;
-    margin-top: 40px;
-    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .box-input
@@ -70,49 +87,76 @@ footer
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    font-size: 1rem;
 }
 
 .input
 {
-    height: 40px;
+    height: 44px;
+    font-size: 15px;
     background: none;
-    color: white;
+    color: #000;
     border: 0.5px solid #CCCDCC80;
     border-radius: 3px;
-    font-size: 1rem;
     padding-left: 10px;
     padding-right: 10px;
     outline: none;
     margin-top: 3px;
 }
 
-select option
-{
-    background-color: #181B1F;
+.form-group {
+    position: relative;
 }
 
-.input-radio
-{
-    height: 16px;
-    width: 16px;
+input:focus {
+    border-color: #2563eb;
+    outline: none;
 }
 
+.label {
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    color: #6b7280;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background: #fff;
+    padding: 0 4px;
+}
+
+/* Quando o input está focado ou preenchido, o label "sobe" */
+input:focus + .label,
+input:not(:placeholder-shown) + .label {
+    top: -8px;
+    left: 8px;
+    font-size: 0.75rem;
+    color: #0861c6;
+}
+ 
 .submit-input
 {
     margin-top: 30px;
     height: 42px;
-    font-size: 1.3rem;
-    background-color: #3B82F6;
+    background-color: #0861c6;
     border: none;
     color: white;
     font-weight: bold;
     border-radius: 3px;
     transition: all 100ms;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .submit-input:hover
 {
     opacity: 0.8;
+}
+
+.icon
+{
+    width: 22px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    opacity: 0.55;
 }

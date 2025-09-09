@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "id-pergunta": 42,
+        "human-1": "É preciso ter paciência e fazer as coisas com calma.",
+        "human-2": "Dedicação e vontade de aprender.",
+        "human-3": "Bons ingredientes e não inventar muita moda."
+    },
+    {
+        "id-pergunta": 26,
+        "human-1": "Suporto até onde dá... depois procuro o médico, se não passar",
+        "human-2": "Se não for uma dor conhecida, procuro por atendimento médico.",
+        "human-3": "Espero o máximo possível antes de tomar remédio. Se eu tomar remédio e não passar, vou ao médico imediatamente."
+    },
+    {
+        "id-pergunta": 1,
+        "human-1": "De não ter estudado Engenharia Elétrica na UFMG (fui aprovado no CEFET-MG e na UFMG em 1987)",
+        "human-2": "Não tenho nenhum arrependimento do que poderia ter feito diferente.",
+        "human-3": "Hoje, não me arrependo de nada. Só agradeço."
+    }
+]

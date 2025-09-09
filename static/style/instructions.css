@@ -1,24 +1,27 @@
-.title
-{
-    font-size: 17px;
-}
 
-.sub-title
-{
-    font-size: 1.3rem;
-}
-
-.instructions, .instructions li, .span
+.instructions, .instructions li
 {
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 14px;
 }
 
 .instructions li{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
-.submit
+.submit-box-input
 {
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-input{
+    margin-top: 15px;
+}
+
+.span{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }

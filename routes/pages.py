@@ -36,4 +36,12 @@ def questionario():
 def resultado():
     if "user_id" not in session:
         return redirect(url_for("pages.index"))
-    return render_template("result.html")
+    
+    nome = session.get("nome") 
+    print("nome")
+    print(nome)
+
+    return render_template(
+        "result.html",
+        nome = nome
+    )

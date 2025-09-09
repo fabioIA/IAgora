@@ -5,87 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/result.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.svg') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <title>Finalizado</title>
 </head>
 <body>
-    <header>
-        <div class="title">
-            <h1>
-                Finalizado !
-            </h1>
-        </div>
-    </header>
-    <main>
-        <div class="bar-circle">
-            <div>
-                <svg class="circle" viewBox="0 0 36 36">
-                    <!-- trilha de fundo -->
-                    <path class="bg" d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                    
-                    <!-- progresso -->
-                    <path class="cprogress" d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                    
-                    <!-- texto central -->
-                    <text x="18" y="18" class="text">0%</text>
-                </svg>
+    <section id="main">
+        <header>
+            <div id="forLogo">
+               <img id="logo" src="static/img/logocompleta.svg" alt="Logo">
             </div>
-
-            <strong id="percentCircle"></strong>
-        </div>
-
-        <div class="message">
-            <span id="message"></span>
-        </div>
-
-        <div class="bars">
-            <div class="bar">
-                <span id="acertos"></span>
-                <div class="box">
-                    <div class="progress"></div>
-                    <strong class="percent"></strong>
+        </header>
+        <main>
+            <div class="bar-circle">
+                <div>
+                    <svg class="circle" viewBox="0 0 36 36">
+                        <!-- trilha de fundo -->
+                        <path class="bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        
+                        <!-- progresso -->
+                        <path class="cprogress" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        
+                        <!-- texto central -->
+                        <text x="18" y="18" class="text">0%</text>
+                    </svg>
                 </div>
+
+                <strong id="percentCircle">{{ nome }}</strong>
             </div>
 
-            <div class="bar">
-                <span>Acertos em relação as IAs</span>
-                <div class="box">
-                    <div class="progress"></div>
-                    <strong class="percent"></strong>
-                </div>
+            <div class="message">
+                <span id="message"></span>
             </div>
 
-            <div class="bar">
-                <span>Acertos em relação ao Chatgpt 4.0</span>
-                <div class="box">
-                    <div class="progress"></div>
-                    <strong class="percent"></strong>
-                </div>
+            <div class="graph-container">
+                <canvas id="graph"></canvas>
             </div>
 
-            <div class="bar">
-                <span>Acertos em relação ao Gemini</span>
-                <div class="box">
-                    <div class="progress"></div>
-                    <strong class="percent"></strong>
-                </div>
+            <div class="desc">
+                <span>Essa é a relação de porcentagem de acertos que você obteve em comparação com as IAs</span>
             </div>
-
-            <div class="bar">
-                <span>Acertos em relação ao Deepseek</span>
-                <div class="box">
-                    <div class="progress"></div>
-                    <strong class="percent"></strong>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <span>META 2025 - IÁgora</span>
-    </footer>
+        </main>
+        <footer>
+            <span>34° META - IÁgora</span>
+        </footer>
+    </section>
 
     <script src="{{ url_for('static', filename='js/result.js') }}"></script>
 </body>
