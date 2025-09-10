@@ -13,47 +13,53 @@
 <body>
     <section id="main">
         <header>
-            <div id="forLogo">
-               <img id="logo" src="static/img/logocompleta.svg" alt="Logo">
+            <div class="title">
+                <h1>
+                    Obrigado {{ nome }}!
+                </h1>
             </div>
         </header>
-        <main>
-            <div class="bar-circle">
-                <div>
+        <main class="main-content">
+            <!-- Lado esquerdo: gráfico + barra circular -->
+            <div class="graph-area">
+                <div class="bar-circle">
                     <svg class="circle" viewBox="0 0 36 36">
-                        <!-- trilha de fundo -->
-                        <path class="bg" d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                        
-                        <!-- progresso -->
-                        <path class="cprogress" d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                        
-                        <!-- texto central -->
+                        <path class="bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="cprogress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
                         <text x="18" y="18" class="text">0%</text>
                     </svg>
+                    <strong id="percentCircle"></strong>
                 </div>
 
-                <strong id="percentCircle">{{ nome }}</strong>
+                <div class="desc">
+                    <span>Sua comparação de acertos em relação as IAs:</span>
+                </div>
+
+                <div class="graph-container">
+                    <canvas id="graph"></canvas>
+                </div>
             </div>
 
-            <div class="message">
-                <span id="message"></span>
-            </div>
+            <!-- Lado direito: textos e descrições -->
+            <div class="content-text">
+                <div class="desc">
+                    <h3>Entendendo o gráfico</h3> <br>
+                    <span>
+                        Este gráfico mostra a comparação entre a sua porcentagem de acertos e a porcentagem de acertos do ChatGPT, DeepSeek, Gemini e também das três IAs juntas. <br><br>
+                        Exemplo: se você acertou 50% das perguntas e o ChatGPT acertou 78%, a diferença é <b>78% - 50% = 28%</b>.  
+                        Isso significa que o ChatGPT acertou 28% a mais que você.
+                    </span>
+                </div>
 
-            <div class="graph-container">
-                <canvas id="graph"></canvas>
-            </div>
-
-            <div class="desc">
-                <span>Essa é a relação de porcentagem de acertos que você obteve em comparação com as IAs</span>
+                <div>
+                    <br>
+                    <p>Ficou interessado? <a href="/sobre">Conheça o projeto</a></p>
+                </div>
             </div>
         </main>
         <footer>
-            <span>34° META - IÁgora</span>
-        </footer>
+            <img id="logo" src="static/img/logocompleta.svg" alt="Logo">
+        </footer>   
     </section>
 
     <script src="{{ url_for('static', filename='js/result.js') }}"></script>

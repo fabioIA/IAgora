@@ -1,80 +1,111 @@
-.title
-{
+/* Título */
+.title {
     margin-bottom: 20px;
 }
 
-.prompt
-{
-    margin-top: 10px;
-    margin-bottom: 10px;
+/* Prompt */
+.prompt {
+    margin: 10px 0;
 }
 
-.question
-{
-    font-size: 18px;
+/* Pergunta */
+.question {
+    font-size: 18px; /* tamanho bom para PC */
     font-weight: bold;
+    line-height: 1.4;
 }
 
-.span
-{
+/* Texto auxiliar */
+.span {
     opacity: 0.7;
     font-size: 13px;
 }
 
-.input
-{
+/* Inputs */
+.input {
     height: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     font-size: 15px;
     resize: none;
+    line-height: 1.4; /* melhora leitura */
 }
 
-.opinion
-{
+/* Opinião */
+.opinion {
     margin-top: 50px;
 }
 
-.submit
-{
+/* Botões submit */
+.submit {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 2%; /* espaçamento consistente */
 }
 
-.submit input
-{
+.submit input {
     width: 49%;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
 }
 
-#next
-{
+#next {
     background-color: #28a745;
+    color: #fff;
 }
 
-#finish
-{
+#finish {
     opacity: 0.7;
     background-color: #0861c6;
+    color: #fff;
     font-weight: normal;
 }
 
-.resp .input
-{
+/* Resposta */
+.resp .input {
     background-color: #00000005;
     border-radius: 7px;
     min-height: 100px;
 }
 
-.input-resp 
-{
+.input-resp {
     pointer-events: none;
     transition: all 100ms;
+    min-height: 100px;         /* altura mínima */
+    height: auto;              /* permite crescer dinamicamente */
+    padding: 10px;             /* espaço interno */
+    font-size: 15px;
+    line-height: 1.5;
+    white-space: pre-wrap;     /* respeita quebras de linha */
+    background-color: #00000005;
+    border-radius: 7px;
+    box-sizing: border-box;    /* padding incluído na altura */
+    overflow: hidden;          /* remove scroll interno */
 }
 
-.input-resp.selected 
-{
+.input-resp.selected {
     border: 1px solid #3B82F6;
     background-color: #66aff830;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .question {
+        font-size: 16px; /* menor em mobile */
+    }
+
+    .span,
+    .submit input {
+        font-size: 14px;
+    }
+
+    .input,
+    .resp .input {
+        font-size: 14px;
+        height: 90px;
+    }
 }

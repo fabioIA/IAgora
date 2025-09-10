@@ -1,5 +1,13 @@
 var selected = "none";
 
+const textareas = document.querySelectorAll('.input-resp');
+
+textareas.forEach(textarea => {
+    // Ajusta a altura ao carregar
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + 'px';
+});
+
 document.addEventListener("click", (e) => {
     const resp = e.target.closest(".resp");
     if (!resp) return;

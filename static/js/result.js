@@ -59,68 +59,106 @@ async function carregar_dados() {
             }   
         });
 
-        //document.getElementById("acertos").innerHTML = `${humano[0]} de ${humano[0] + humano[1]} acerto(s)`
-
-        let prcentHumano = (humano[0]/(humano[0] + humano[1]))
-        let prcentChatgpt = chatgpt[0]/(chatgpt[0] + chatgpt[1])
-        let prcentGemini = gemini[0]/(gemini[0] + gemini[1])
-        let prcentDeepseek = deepseek[0]/(deepseek[0] + deepseek[1])
-        var mediaIas = (prcentGemini + prcentChatgpt + prcentDeepseek) / 3
-        
+        let percentHumano = (humano[0]/(humano[0] + humano[1]))
+        let percentChatgpt = chatgpt[0]/(chatgpt[0] + chatgpt[1])
+        let percentGemini = gemini[0]/(gemini[0] + gemini[1])
+        let percentDeepseek = deepseek[0]/(deepseek[0] + deepseek[1])
+        var mediaIas = (percentGemini + percentChatgpt + percentDeepseek) / 3
+       
         const ctx = document.getElementById('graph').getContext('2d');
 
         const dados = {
             labels: ['IAs', 'Chatgpt', 'Gemini', 'DeepSeek'],
             datasets: [{
-            label: 'Variação (%)',
-            data: [parseInt((prcentHumano - mediaIas) * 100), parseInt((prcentHumano - prcentChatgpt) * 100), parseInt((prcentHumano - prcentGemini) * 100), parseInt((prcentHumano - prcentDeepseek) * 100)],
-            backgroundColor: function(ctx) {
-                const valor = ctx.dataset.data[ctx.dataIndex];
-                return valor >= 0 ? '#22c55e' : '#EF4444';
-            },
-            borderRadius: 6,
+                label: 'Variação (%)',
+                data: [
+                    parseInt((percentHumano - mediaIas) * 100),
+                    parseInt((percentHumano - percentChatgpt) * 100),
+                    parseInt((percentHumano - percentGemini) * 100),
+                    parseInt((percentHumano - percentDeepseek) * 100)
+                ],
+                backgroundColor: function(ctx) {
+                    const valor = ctx.dataset.data[ctx.dataIndex];
+                    return valor >= 0 ? '#22c55e' : '#EF4444'; // verde / vermelho
+                },
+                borderRadius: 4,
             }]
         };
 
         const opcoes = {
             responsive: true,
             maintainAspectRatio: false,
-            plugins: {
-            legend: { display: false },
-            tooltip: {
-                callbacks: {
-                label: context => `${context.parsed.y}%`
+            devicePixelRatio: 2,
+            layout: {
+                padding: {
+                    top: 30,     // espaço extra em cima (evita cortar verde)
+                    bottom: 30   // espaço extra embaixo (afasta do eixo X)
                 }
             },
-            datalabels: {
-                anchor: 'center',
-                align: 'center',
-                formatter: value => `${value}%`,
-                color: 'white',
-                font: { weight: 'bold' }
-            }
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: context => `${context.parsed.y}%`
+                    }
+                },
+                datalabels: {
+                    anchor: function(context) {
+                        const valor = context.dataset.data[context.dataIndex];
+                        return valor >= 0 ? 'end' : 'start';
+                    },
+                    align: function(context) {
+                        const valor = context.dataset.data[context.dataIndex];
+                        return valor >= 0 ? 'end' : 'start';
+                    },
+                    offset: 6,
+                    formatter: value => `${value}%`,
+                    color: 'black',
+                    font: {
+                        weight: 'bold',
+                        size: 14
+                    },
+                    clip: false
+                }
             },
             scales: {
-            y: {
-                beginAtZero: true,
-                grid: { display: false },
-                border: { display: false },
-                ticks: { display: false }
-            },
-            x: {
-                border: { display: false },
-                ticks: { maxRotation: 90, minRotation: 45 },
-                grid: { display: false }
-            }
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        drawTicks: false,
+                        drawBorder: false,
+                        color: function(context) {
+                            // só desenha a linha no zero
+                            return context.tick.value === 0 ? '#00000025' : 'transparent';
+                        },
+                        lineWidth: function(context) {
+                            return context.tick.value === 0 ? 2 : 0;
+                        }
+                    },
+                    border: { display: false },
+                    ticks: { display: false }
+                },
+                x: {
+                    grid: { display: false },
+                    border: { display: false },
+                    ticks: {
+                        align: 'center',
+                        padding: 15  // mais espaço entre labels e valores vermelhos
+                    }
+                }
             }
         };
 
-        new Chart(ctx, {
+        const grafico = new Chart(ctx, {
             type: 'bar',
             data: dados,
             options: opcoes,
             plugins: [ChartDataLabels]
         });
+
+        // aumenta um pouco a altura
+        document.getElementById('graph').style.height = "320px";
+
 
         let sum = 0.0
         mediaPessoas.forEach(el => {
@@ -130,44 +168,25 @@ async function carregar_dados() {
                 sum = sum + el.acertos / (el.acertos + el.erros)
         })
 
-        //Mensagem
-        //document.getElementById("message").innerHTML = messageMedia(prcentHumano)
-
         var p
-        prcentHumano = parseInt(prcentHumano * 100)
+        percentHumano = parseInt(percentHumano * 100)
+
         // Barra de progresso circular
-        if(prcentHumano > 0)
+        if(percentHumano > 0)
         {
-            document.getElementById("percentCircle").innerHTML += `, você acertou ${prcentHumano}% das vezes`
-            p = Math.max(0, Math.min(100, prcentHumano)); // limita entre 0 e 100
+            document.getElementById("percentCircle").innerHTML += `Você acertou ${percentHumano}% das perguntas`
+            p = Math.max(0, Math.min(100, percentHumano)); // limita entre 0 e 100
             document.querySelector('.text').textContent = p + "%";
             document.querySelector(".text").style.fill = '#22c55e'
             document.querySelector(".cprogress").style.stroke = '#22c55e'
         }
-        else if(prcentHumano < 0)
-        {
-            document.getElementById("percentCircle").innerHTML += `, você acertou ${-prcentHumano}% das vezes`
-            p = Math.max(0, Math.min(100, -prcentHumano)); // limita entre 0 e 100
-            document.querySelector('.text').textContent = `-${p}%`;
-            document.querySelector(".text").style.fill = '#EF4444'
-            document.querySelector(".cprogress").style.stroke = '#EF4444'
-        }
         else
         {
-            document.getElementById("percentCircle").innerHTML += ', você não acertou nenhuma vez'
+            document.getElementById("percentCircle").innerHTML += 'Você não acertou nenhuma pergunta'
             document.querySelector('.text').textContent = '0%';
             document.querySelector(".text").style.fill = '#000'
         }
 
         document.querySelector('.cprogress').style.strokeDashoffset = 100 - p;
     });
-}
-
-function messageMedia(prcentHumano) {
-    if (prcentHumano < 0) return "Continue praticando! Você ainda pode superar a média."
-    else if (prcentHumano < 10) return "Você ficou um pouco acima da média. Bom começo!"
-    else if (prcentHumano < 25) return "Parabéns! Você está bem acima da média."
-    else if (prcentHumano < 50) return "Excelente! Sua taxa de acerto mostra que você tem um talento especial."
-    else if (prcentHumano < 70) return "Incrível! Você está no topo, com desempenho muito acima da média."
-    else return "Lendário! Seu desempenho está muito além da média, poucos chegam nesse nível."
 }

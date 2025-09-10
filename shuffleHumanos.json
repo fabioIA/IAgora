@@ -1,9 +1,9 @@
 [
     {
-        "id-pergunta": 42,
-        "human-1": "É preciso ter paciência e fazer as coisas com calma.",
-        "human-2": "Dedicação e vontade de aprender.",
-        "human-3": "Bons ingredientes e não inventar muita moda."
+        "id-pergunta": 38,
+        "human-1": "Não sei opinar agora",
+        "human-2": "O efeito estufa é a emissão de gases que causam o aquecimento da terra. O Aquecimento global é a consequência do efeito estufa desordenado.",
+        "human-3": "O efeito estufa gera o aquecimento global. O efeito estufa é o fenômeno, o aquecimento é a consequência."
     },
     {
         "id-pergunta": 26,
@@ -12,9 +12,81 @@
         "human-3": "Espero o máximo possível antes de tomar remédio. Se eu tomar remédio e não passar, vou ao médico imediatamente."
     },
     {
-        "id-pergunta": 1,
-        "human-1": "De não ter estudado Engenharia Elétrica na UFMG (fui aprovado no CEFET-MG e na UFMG em 1987)",
-        "human-2": "Não tenho nenhum arrependimento do que poderia ter feito diferente.",
-        "human-3": "Hoje, não me arrependo de nada. Só agradeço."
+        "id-pergunta": 8,
+        "human-1": "Leitura, usar redes sociais (usando cada vez menos), assistir vídeos no Youtube",
+        "human-2": "Acordar cedo, trabalhar durante o dia e me dedicar à família à noite.",
+        "human-3": "Estudar, trabalhar, fazer exercício físico, estudar línguas, passear, viajar."
+    },
+    {
+        "id-pergunta": 46,
+        "human-1": "Saio. Me levanto rápido e ofereço o meu dia a Deus.",
+        "human-2": "Sim. Escovo os dentes.",
+        "human-3": "Sim, saio todos os dias. Raramente não saio de casa principalmente por conta do trabalho. Quando acordo olho o celular, escovo os dentes e vou ao banheiro. Depois tomo água e café da manhã."
+    },
+    {
+        "id-pergunta": 27,
+        "human-1": "Sim, na medida certa. A carreira de professor me ajudou neste sentido, bem como o meu interesse em conversar com as pessoas",
+        "human-2": "Sim. Consigo me relacionar bem com as pessoas no meu entorno.",
+        "human-3": "Considero. Tenho facilidade de me comunicar."
+    },
+    {
+        "id-pergunta": 32,
+        "human-1": "Não sei opinar",
+        "human-2": "A angiosperma é uma planta mais completa. A Briófita é uma planta simples.",
+        "human-3": "Não me lembro."
+    },
+    {
+        "id-pergunta": 13,
+        "human-1": "Não assisti",
+        "human-2": "Frustrante.",
+        "human-3": "Não assisti GOT."
+    },
+    {
+        "id-pergunta": 21,
+        "human-1": "Bem, muito bem.",
+        "human-2": "Bem.",
+        "human-3": "Hoje estou cansado, meio desastrado. Deixei cair muitas coisas. Mas estou no geral \"bem\""
+    },
+    {
+        "id-pergunta": 15,
+        "human-1": "Eu seria um ótimo pai de família. Não tive filhos. Acho que os pais são os heróis dos filhos, deveriam ser!",
+        "human-2": "Super Homem. Possui grandes poderes e inteligência. Foi o primeiro super herói que marcou a minha infância.",
+        "human-3": "Flash. Escolheria algum outro que voa mas acho muito óbvio. Então vou no que tem super velocidade para poder chegar rápido em qualquer lugar e voltar na mesma hora."
+    },
+    {
+        "id-pergunta": 12,
+        "human-1": "Não me lembro deste desenho",
+        "human-2": "Não sei responder.",
+        "human-3": "o estilo marreta é mais legal do que aquele estilo machado. Acho que é mais tradicional."
+    },
+    {
+        "id-pergunta": 39,
+        "human-1": "Efeito da atração da Terra sobre os corpos",
+        "human-2": "É uma força que a terra faz sobre tudo o que há no planeta.",
+        "human-3": "Gravidade é um fenômeno de atração que ocorre entre corpos que possuem massa."
+    },
+    {
+        "id-pergunta": 16,
+        "human-1": "Música clássica, por que é permanente, atemporal. Além disso é a base da música",
+        "human-2": "Rock'n Roll. Gosto da sonoridade e do rítimo.",
+        "human-3": "Rock, acho que porque era muito comum na minha época de adolescente."
+    },
+    {
+        "id-pergunta": 33,
+        "human-1": "Não me lembro para opinar com certeza",
+        "human-2": "Sim. A covalente compartilham elétrons. A iônica não.",
+        "human-3": "Tenho ideia. Mas prefiro não responder para não falar bobagem."
+    },
+    {
+        "id-pergunta": 28,
+        "human-1": "Está boa. Tenho feito musculação (2x na semana) e isso tem me ajudado muito.",
+        "human-2": "Bem.",
+        "human-3": "Estou bem, tudo certo."
+    },
+    {
+        "id-pergunta": 9,
+        "human-1": "Atualmente com mais resiliência, mas nem sempre foi assim.",
+        "human-2": "Tento aprender com elas para melhorar pessoalmente e profissionalmente.",
+        "human-3": "Poxa, particularmente, me faz mal demais. Tenho dificuldade de lidar com isso mas, normalmente, tento resolver as coisas a qualquer custo. Tenho dificuldade de 'deixar passar'."
     }
 ]

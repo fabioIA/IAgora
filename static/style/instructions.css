@@ -1,27 +1,42 @@
-
-.instructions, .instructions li
-{
+/* Instruções */
+.instructions,
+.instructions li {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 14px; /* bom para PC */
+    line-height: 1.5; /* melhora leitura */
 }
 
-.instructions li{
+.instructions li {
     margin-left: 20px;
 }
 
-.submit-box-input
-{
+/* Box de submit */
+.submit-box-input {
     display: flex;
     flex-direction: column;
 }
 
-.submit-input{
+.submit-input {
     margin-top: 15px;
 }
 
-.span{
-    font-size: 16px;
+/* Span centralizado */
+.span {
+    font-size: 16px; /* bom para PC */
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+    line-height: 1.4; /* melhora leitura */
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .instructions,
+    .instructions li {
+        font-size: 13px; 
+    }
+
+    .span {
+        font-size: 14px; 
+    }
 }

@@ -14,6 +14,13 @@ def instrucoes():
         return redirect(url_for("pages.index"))
     return render_template("instructions.html")
 
+
+@pages_bp.route("/sobre")
+def sobre():
+    if "user_id" not in session:
+        return redirect(url_for("pages.index"))
+    return render_template("about.html")
+
 @pages_bp.route("/questionario")
 def questionario():
     if "user_id" not in session:
@@ -38,8 +45,6 @@ def resultado():
         return redirect(url_for("pages.index"))
     
     nome = session.get("nome") 
-    print("nome")
-    print(nome)
 
     return render_template(
         "result.html",
