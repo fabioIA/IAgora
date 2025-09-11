@@ -1,4 +1,6 @@
 import json, os
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 ARQUIVO = "pessoas.json"
 
@@ -17,6 +19,7 @@ def salvar_pessoas(pessoas):
 
 def cadastrar_pessoa(nome, idade, genero, formacao, ocupacao):
     pessoas = carregar_pessoas()
+    
     novo_id = 1 if not pessoas else max(p["id"] for p in pessoas) + 1
     nova_pessoa = {
         "id": novo_id,
@@ -24,7 +27,8 @@ def cadastrar_pessoa(nome, idade, genero, formacao, ocupacao):
         "age": idade,
         "gender": genero,
         "formation": formacao,
-        "ocupation": ocupacao
+        "ocupation": ocupacao,
+        "created_at": datetime.now(ZoneInfo("America/Sao_Paulo")).strftime("%d/%m/%Y %H:%M:%S")
     }
     pessoas.append(nova_pessoa)
     salvar_pessoas(pessoas)

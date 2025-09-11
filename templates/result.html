@@ -23,31 +23,28 @@
             <!-- Lado esquerdo: gráfico + barra circular -->
             <div class="graph-area">
                 <div class="bar-circle">
+                    <strong id="percentCircle"></strong>
                     <svg class="circle" viewBox="0 0 36 36">
                         <path class="bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
                         <path class="cprogress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
                         <text x="18" y="18" class="text">0%</text>
                     </svg>
-                    <strong id="percentCircle"></strong>
                 </div>
 
                 <div class="desc">
-                    <span>Sua comparação de acertos em relação as IAs:</span>
-                </div>
-
-                <div class="graph-container">
-                    <canvas id="graph"></canvas>
+                    <span id="message"></span><br>
+                    <div class="bars"></div>
                 </div>
             </div>
 
             <!-- Lado direito: textos e descrições -->
             <div class="content-text">
-                <div class="desc">
-                    <h3>Entendendo o gráfico</h3> <br>
+                <div id="desc">
+                    <h3>Entendendo o gráfico</h3> 
                     <span>
-                        Este gráfico mostra a comparação entre a sua porcentagem de acertos e a porcentagem de acertos do ChatGPT, DeepSeek, Gemini e também das três IAs juntas. <br><br>
-                        Exemplo: se você acertou 50% das perguntas e o ChatGPT acertou 78%, a diferença é <b>78% - 50% = 28%</b>.  
-                        Isso significa que o ChatGPT acertou 28% a mais que você.
+                        Este gráfico mostra a porcentagem de acertos que cada Inteligência Artificial obteve. 
+                        O cálculo é: (acertos da IA ÷ (acertos da IA + seus acertos)) × 100. <br>
+                        Exemplo: se a IA acertou 2 e você acertou 3, então (2 ÷ (2 + 3)) × 100 = 40%.
                     </span>
                 </div>
 
@@ -62,6 +59,6 @@
         </footer>   
     </section>
 
-    <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='js/result.js') }}"></script>
 </body>
 </html>

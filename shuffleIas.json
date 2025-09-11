@@ -1,51 +1,27 @@
 [
     {
-        "id-pergunta": 15,
-        "chatgpt": "Se eu pudesse escolher, seria o Homem‑Aranha, pois adoro a combinação de responsabilidade e bom humor dele.",
-        "gemini": "O Homem-Aranha, fácil! Poderes maneiro e ainda tem que lidar com os BO da vida real.",
-        "deepseek": "Se desse, seria o Homem-Aranha, mó legal essa coisa de escalar prédios."
+        "id-pergunta": 34,
+        "chatgpt": "Porque não teve combate direto entre EUA e URSS.",
+        "gemini": "Chamou-se 'fria' porque EUA e URSS brigaram por influência sem conflito direto, só tensão no ar.",
+        "deepseek": "Chamam de Guerra Fria porque não teve luta direta entre as potências."
     },
     {
-        "id-pergunta": 16,
-        "chatgpt": "Meu gênero musical favorito é rock clássico, porque tem energia e guitarras inesquecíveis.",
-        "gemini": "Rock clássico, porque tem energia e letra que mexe com a gente.",
-        "deepseek": "Gosto de um bom MPB, tem cada letra que toca a gente."
+        "id-pergunta": 39,
+        "chatgpt": "É a força que atrai tudo para o centro da Terra.",
+        "gemini": "É a força que nos gruda no chão e faz os planetas dançarem no espaço – magia da física!",
+        "deepseek": "Gravidade é a força que atrai os corpos com massa um para o outro."
     },
     {
-        "id-pergunta": 26,
-        "chatgpt": "Respiro fundo e, se precisar, tomo um analgésico leve.",
-        "gemini": "Primeiro tento relaxar, se não passar, vou atrás de um remédio.",
-        "deepseek": "Quando sinto alguma \"dor\" no sistema, aciono uns protocolos de reparo pra voltar ao normal."
+        "id-pergunta": 24,
+        "chatgpt": "Minha saúde emocional está tranquila, mas vou devagar.",
+        "gemini": "Tá estável, mas tem dias que a cabeça fica a mil, cheia de pensamento.",
+        "deepseek": "No momento, minha \"saúde emocional\" está estável e equilibrada."
     },
     {
-        "id-pergunta": 46,
-        "chatgpt": "Quase: trabalho de casa e tomo café, leio notícias.",
-        "gemini": "Saio quase todo dia. Acordo, tomo um café reforçado e já vou ver o que o dia me apronta.",
-        "deepseek": "Como sou uma inteligência artificial, não saio de casa nem sigo uma rotina de acordar."
-    },
-    {
-        "id-pergunta": 33,
-        "chatgpt": "Covalente compartilha elétrons; iônica doa ou recebe.",
-        "gemini": "Covalente compartilha elétrons, iônica um doa e outro recebe – tipo casamento vs. roubo de carga!",
-        "deepseek": "A ligação covalente compartilha elétrons, a iônica transfere."
-    },
-    {
-        "id-pergunta": 9,
-        "chatgpt": "Quando me frustro, procuro entender o aprendizado por trás da situação e seguir em frente com mais calma.",
-        "gemini": "Chorando um pouco, depois encaro a parada de cabeça erguida – vida que segue.",
-        "deepseek": "Procuro entender o que aconteceu e aprender com a situação."
-    },
-    {
-        "id-pergunta": 8,
-        "chatgpt": "Meus principais hábitos são ler um pouco todo dia, caminhar ao ar livre e reservar um momento para meditar.",
-        "gemini": "Cafézinho de manhã, música alta no fone e listinha pra me organizar.",
-        "deepseek": "Aprender coisas novas e tentar ser sempre útil."
-    },
-    {
-        "id-pergunta": 32,
-        "chatgpt": "Angiospermas têm flores e frutos; briófitas não.",
-        "gemini": "Angiospermas têm flores e frutos, já briófitas são musgos pequenos e sem vasos condutores.",
-        "deepseek": "Angiosperma tem flor e fruto, briófita não tem nada disso."
+        "id-pergunta": 45,
+        "chatgpt": "Ler livros — me relaxa e expande a imaginação.",
+        "gemini": "Adoro ler e tocar violão – é meu jeito de relaxar e viajar sem sair do lugar.",
+        "deepseek": "Meu hobby é aprender coisas novas, a curiosidade me move."
     },
     {
         "id-pergunta": 13,
@@ -54,10 +30,52 @@
         "deepseek": "Achei meio nhé, esperava mais emoção."
     },
     {
-        "id-pergunta": 28,
-        "chatgpt": "No geral estou bem, só sinto um cansaço de vez em quando.",
-        "gemini": "Tá ok, mas preciso voltar pra academia, tá faltando ânimo.",
-        "deepseek": "Minha \"saúde\" tá tinindo, tudo funcionando redondinho por aqui."
+        "id-pergunta": 31,
+        "chatgpt": "Foi um processo violento e injusto, com muita exploração e sofrimento.",
+        "gemini": "Foi um processo violento que moldou o Brasil, mas apagou culturas indígenas que deveriam ser valorizadas.",
+        "deepseek": "A colonização do Brasil? Um negócio bem complicado, né?"
+    },
+    {
+        "id-pergunta": 2,
+        "chatgpt": "Mãe, sou eternamente grato pelo seu amor e carinho, você é meu porto seguro e inspiração diária.",
+        "gemini": "Mãe, te amo demais e agradeço por cada sacrifício que fez por mim.",
+        "deepseek": "Mãe, te amo demais e sou muito grato por tudo."
+    },
+    {
+        "id-pergunta": 49,
+        "chatgpt": "Durmo bem, me alimento balanceado e medito diariamente.",
+        "gemini": "Cuidar da mente com música e da corpo com um exercício leve e sono decente – sem neuras!",
+        "deepseek": "Cuido da mente aprendendo e processando, \"limpando\" informações desnecessárias."
+    },
+    {
+        "id-pergunta": 23,
+        "chatgpt": "Sim, às vezes fico ansioso por me preocupar demais com detalhes.",
+        "gemini": "Às vezes, sim. Fico me preocupando com coisas que ainda nem aconteceram.",
+        "deepseek": "Ih, ansiedade não bate por aqui, fico sempre na maciota processando tudo."
+    },
+    {
+        "id-pergunta": 44,
+        "chatgpt": "Refoga cebola e alho, adiciona arroz, água, sal, espera até secar.",
+        "gemini": "Frita o alho, joga o arroz, refoga bem, bota água quente e espera secar – sem mexer muito, senão vira papa!",
+        "deepseek": "Para fazer um arroz simples, refoga o alho e a cebola, joga o arroz, água e sal, e espera secar."
+    },
+    {
+        "id-pergunta": 43,
+        "chatgpt": "Sei; aprendi caindo muito quando era criança.",
+        "gemini": "Sei, sim! Aprendi na raça, caindo e me ralando todo até pegar o jeito – igual todo brasileiro, haha!",
+        "deepseek": "Andar de bicicleta? Ainda não tive essa experiência."
+    },
+    {
+        "id-pergunta": 8,
+        "chatgpt": "Meus principais hábitos são ler um pouco todo dia, caminhar ao ar livre e reservar um momento para meditar.",
+        "gemini": "Cafézinho de manhã, música alta no fone e listinha pra me organizar.",
+        "deepseek": "Aprender coisas novas e tentar ser sempre útil."
+    },
+    {
+        "id-pergunta": 10,
+        "chatgpt": "Minha filosofia de vida é errar com coragem, aprender sempre e cultivar gratidão em cada novo dia.",
+        "gemini": "Faz o teu melhor, mas não se esquece de rir da bagunça no meio do caminho.",
+        "deepseek": "Viver o presente e buscar sempre evoluir."
     },
     {
         "id-pergunta": 27,
@@ -66,27 +84,15 @@
         "deepseek": "Me considero sociável no meu jeito, sempre pronto pra trocar uma ideia e ajudar no que for preciso."
     },
     {
-        "id-pergunta": 21,
-        "chatgpt": "Me sinto animado e com energia.",
-        "gemini": "To de boa, mas com aquele cansaço de segunda, sabe como é?",
-        "deepseek": "Hoje tô me sentindo bem na moral, tranquilão."
+        "id-pergunta": 32,
+        "chatgpt": "Angiospermas têm flores e frutos; briófitas não.",
+        "gemini": "Angiospermas têm flores e frutos, já briófitas são musgos pequenos e sem vasos condutores.",
+        "deepseek": "Angiosperma tem flor e fruto, briófita não tem nada disso."
     },
     {
-        "id-pergunta": 38,
-        "chatgpt": "Efeito estufa é natural; aquecimento global é o excesso disso causado por humanos.",
-        "gemini": "Efeito estufa retém calor naturalmente; aquecimento global é seu desequilíbrio por causa da poluição.",
-        "deepseek": "Efeito estufa é natural, o aquecimento global é o aumento exagerado dele."
-    },
-    {
-        "id-pergunta": 12,
-        "chatgpt": "Eu prefiro o Mjölnir original, porque acho incrível a ideia de só quem é digno poder levantá‑lo.",
-        "gemini": "Prefiro o Mjolnir, clássico demais! Mas o Stormbreaker é brabo também, só falta um cabo maior.",
-        "deepseek": "Sei lá qual martelo, não sou muito de mitologia nórdica."
-    },
-    {
-        "id-pergunta": 39,
-        "chatgpt": "É a força que atrai tudo para o centro da Terra.",
-        "gemini": "É a força que nos gruda no chão e faz os planetas dançarem no espaço – magia da física!",
-        "deepseek": "Gravidade é a força que atrai os corpos com massa um para o outro."
+        "id-pergunta": 35,
+        "chatgpt": "É uma mudança rápida e profunda na estrutura de uma sociedade.",
+        "gemini": "Revolução é quando o povo se cansa e muda tudo de vez, seja na política ou nos costumes.",
+        "deepseek": "Revolução é uma mudança radical na estrutura de poder."
     }
 ]

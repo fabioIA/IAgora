@@ -1,4 +1,6 @@
 import json, os
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 ARQUIVO = "data.json"
 
@@ -23,6 +25,7 @@ def cadastrar_data(id_pergunta, id_pessoa, ia_utilizada, opiniao, acertou):
         "ia_utilizada": ia_utilizada,
         "opiniao": opiniao,
         "acertou": acertou,
+        "created_at": datetime.now(ZoneInfo("America/Sao_Paulo")).strftime("%d/%m/%Y %H:%M:%S")
     }
     dados.append(nova_data)
     salvar_data(dados)

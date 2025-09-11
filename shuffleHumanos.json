@@ -1,27 +1,45 @@
 [
     {
-        "id-pergunta": 38,
-        "human-1": "Não sei opinar agora",
-        "human-2": "O efeito estufa é a emissão de gases que causam o aquecimento da terra. O Aquecimento global é a consequência do efeito estufa desordenado.",
-        "human-3": "O efeito estufa gera o aquecimento global. O efeito estufa é o fenômeno, o aquecimento é a consequência."
+        "id-pergunta": 39,
+        "human-1": "Efeito da atração da Terra sobre os corpos",
+        "human-2": "É uma força que a terra faz sobre tudo o que há no planeta.",
+        "human-3": "Gravidade é um fenômeno de atração que ocorre entre corpos que possuem massa."
     },
     {
-        "id-pergunta": 26,
-        "human-1": "Suporto até onde dá... depois procuro o médico, se não passar",
-        "human-2": "Se não for uma dor conhecida, procuro por atendimento médico.",
-        "human-3": "Espero o máximo possível antes de tomar remédio. Se eu tomar remédio e não passar, vou ao médico imediatamente."
+        "id-pergunta": 31,
+        "human-1": "Ela ocorreu do jeito que tinha que ser.",
+        "human-2": "O Brasil foi roubado e a população nativa foi quase dizimada como todas as nações colonizadas.",
+        "human-3": "Catastrófica. Fico indignado como, principalmente os povos originários foram massacrados (e são até hoje)."
     },
     {
-        "id-pergunta": 8,
-        "human-1": "Leitura, usar redes sociais (usando cada vez menos), assistir vídeos no Youtube",
-        "human-2": "Acordar cedo, trabalhar durante o dia e me dedicar à família à noite.",
-        "human-3": "Estudar, trabalhar, fazer exercício físico, estudar línguas, passear, viajar."
+        "id-pergunta": 10,
+        "human-1": "A vida é um dom, portanto devemos vivê-la da melhor maneira possível, embora muitos não saibam como fazer isso.",
+        "human-2": "Honra, verdade, justiça e lealdade.",
+        "human-3": "Viver o agora, viajar bastante e aproveitar boas companhias e experiências."
     },
     {
-        "id-pergunta": 46,
-        "human-1": "Saio. Me levanto rápido e ofereço o meu dia a Deus.",
-        "human-2": "Sim. Escovo os dentes.",
-        "human-3": "Sim, saio todos os dias. Raramente não saio de casa principalmente por conta do trabalho. Quando acordo olho o celular, escovo os dentes e vou ao banheiro. Depois tomo água e café da manhã."
+        "id-pergunta": 49,
+        "human-1": "Os dois devem estar em sintonia. Tenho descuidado das horas de sono. Estes cuidados são os mais urgentes, uma vez que a alimentação vai bem.",
+        "human-2": "Manter sempre os dois ativos.",
+        "human-3": "Terapia semanal e academia 5 vezes por semana."
+    },
+    {
+        "id-pergunta": 34,
+        "human-1": "Por que não ocorre o uso de armas, somente ocorre a ameaça de usá-las, principalmente com relação às armas nucleares",
+        "human-2": "Porque não houve guerra militar, apenas ideológica e política.",
+        "human-3": "Porque os países proeminentes não entraram na guerra diretamente (EUA e URSS) mas muniram outros países para guerrear entre sí."
+    },
+    {
+        "id-pergunta": 35,
+        "human-1": "Atitude de tentar mudar o que é necessário e urgente e impacta a vida de muitas pessoas, além da própria",
+        "human-2": "É a mudança de algo que se transforma completamente.",
+        "human-3": "Penso que é a tomada dos bens de produção pela classe trabalhadora."
+    },
+    {
+        "id-pergunta": 45,
+        "human-1": "Atualmente leitura! Me faz crescer muito.",
+        "human-2": "Assistir jogos de futebol. É o meu esporte favorito.",
+        "human-3": "Estudar línguas estrangeiras. Gosto de acompanhar meus resultados quando converso em outra língua e sou entendido."
     },
     {
         "id-pergunta": 27,
@@ -30,10 +48,40 @@
         "human-3": "Considero. Tenho facilidade de me comunicar."
     },
     {
+        "id-pergunta": 23,
+        "human-1": "Sim, me considero. Sou ansioso por natureza. Tenho transtorno bipolar (medicado) e já tive alguns episódios de depressão na vida",
+        "human-2": "Um pouco. Me lido bem, com as questões de expectativa. Mas dentro do normal, me sinto ansioso quando aguardo por situações importantes.",
+        "human-3": "Sim, muito. A ponto de entrar em desespero as vezes. De \"catastrofisar\" quase tudo."
+    },
+    {
+        "id-pergunta": 2,
+        "human-1": "A senhora faz muita falta (minha mãe faleceu em 2015, aos 80 anos)",
+        "human-2": "Te amo Mãe! Muito obrigado por tudo!",
+        "human-3": "Para mim é difícil te perdoar e aceitar o que você fez conosco. Talvez um dia."
+    },
+    {
         "id-pergunta": 32,
         "human-1": "Não sei opinar",
         "human-2": "A angiosperma é uma planta mais completa. A Briófita é uma planta simples.",
         "human-3": "Não me lembro."
+    },
+    {
+        "id-pergunta": 8,
+        "human-1": "Leitura, usar redes sociais (usando cada vez menos), assistir vídeos no Youtube",
+        "human-2": "Acordar cedo, trabalhar durante o dia e me dedicar à família à noite.",
+        "human-3": "Estudar, trabalhar, fazer exercício físico, estudar línguas, passear, viajar."
+    },
+    {
+        "id-pergunta": 24,
+        "human-1": "Está muito boa",
+        "human-2": "Acredito estar muito bem.",
+        "human-3": "Estou \"estável\"."
+    },
+    {
+        "id-pergunta": 43,
+        "human-1": "Sim, aprendi quando criança, caindo e levantando",
+        "human-2": "Sim. Meu pai me ensinou na infância.",
+        "human-3": "Sim, aprendi com bicicleta de rodinhas e depois quando retirou."
     },
     {
         "id-pergunta": 13,
@@ -42,51 +90,9 @@
         "human-3": "Não assisti GOT."
     },
     {
-        "id-pergunta": 21,
-        "human-1": "Bem, muito bem.",
-        "human-2": "Bem.",
-        "human-3": "Hoje estou cansado, meio desastrado. Deixei cair muitas coisas. Mas estou no geral \"bem\""
-    },
-    {
-        "id-pergunta": 15,
-        "human-1": "Eu seria um ótimo pai de família. Não tive filhos. Acho que os pais são os heróis dos filhos, deveriam ser!",
-        "human-2": "Super Homem. Possui grandes poderes e inteligência. Foi o primeiro super herói que marcou a minha infância.",
-        "human-3": "Flash. Escolheria algum outro que voa mas acho muito óbvio. Então vou no que tem super velocidade para poder chegar rápido em qualquer lugar e voltar na mesma hora."
-    },
-    {
-        "id-pergunta": 12,
-        "human-1": "Não me lembro deste desenho",
-        "human-2": "Não sei responder.",
-        "human-3": "o estilo marreta é mais legal do que aquele estilo machado. Acho que é mais tradicional."
-    },
-    {
-        "id-pergunta": 39,
-        "human-1": "Efeito da atração da Terra sobre os corpos",
-        "human-2": "É uma força que a terra faz sobre tudo o que há no planeta.",
-        "human-3": "Gravidade é um fenômeno de atração que ocorre entre corpos que possuem massa."
-    },
-    {
-        "id-pergunta": 16,
-        "human-1": "Música clássica, por que é permanente, atemporal. Além disso é a base da música",
-        "human-2": "Rock'n Roll. Gosto da sonoridade e do rítimo.",
-        "human-3": "Rock, acho que porque era muito comum na minha época de adolescente."
-    },
-    {
-        "id-pergunta": 33,
-        "human-1": "Não me lembro para opinar com certeza",
-        "human-2": "Sim. A covalente compartilham elétrons. A iônica não.",
-        "human-3": "Tenho ideia. Mas prefiro não responder para não falar bobagem."
-    },
-    {
-        "id-pergunta": 28,
-        "human-1": "Está boa. Tenho feito musculação (2x na semana) e isso tem me ajudado muito.",
-        "human-2": "Bem.",
-        "human-3": "Estou bem, tudo certo."
-    },
-    {
-        "id-pergunta": 9,
-        "human-1": "Atualmente com mais resiliência, mas nem sempre foi assim.",
-        "human-2": "Tento aprender com elas para melhorar pessoalmente e profissionalmente.",
-        "human-3": "Poxa, particularmente, me faz mal demais. Tenho dificuldade de lidar com isso mas, normalmente, tento resolver as coisas a qualquer custo. Tenho dificuldade de 'deixar passar'."
+        "id-pergunta": 44,
+        "human-1": "Há muito tempo não faço...",
+        "human-2": "Lava-se o arroz, depois cozinha-se com água até a água secar. Deixar descansar. Coloca mais água e cozinha-se de novo até a água secar.",
+        "human-3": "Gosto de fazer arroz parboilizado. Coloco a água para ferver, duas medidas de agua para uma de arroz. Quando ferver coloca o arroz e o tempero. Esperar a água evaporar e pronto."
     }
 ]
