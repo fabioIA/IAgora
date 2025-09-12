@@ -32,11 +32,7 @@ async function carregar_dados() {
         let percentChatgpt = chatgpt[0]/(chatgpt[0] + chatgpt[1])
         let percentGemini = gemini[0]/(gemini[0] + gemini[1])
         let percentDeepseek = deepseek[0]/(deepseek[0] + deepseek[1])
-
-        console.log(deepseek[0])
-        console.log(deepseek[1])
-        console.log(deepseek[0]/(deepseek[0] + deepseek[1]))
-
+        
         if(parseInt(percentChatgpt*100) > 0)
         {
             document.querySelector('.bars').innerHTML += `
