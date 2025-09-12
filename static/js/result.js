@@ -85,6 +85,7 @@ async function carregar_dados() {
         else
             document.getElementById("message").innerHTML = draw[Math.floor(Math.random() * 3)]
 
+        var p
         // Barra de progresso circular
         if(parseInt(percentHumano * 100) > 0)
         {
