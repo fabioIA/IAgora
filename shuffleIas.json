@@ -1,0 +1,212 @@
+[
+    {
+        "id-pergunta": 38,
+        "chatgpt": "Efeito estufa é natural; aquecimento global é o excesso disso causado por humanos.",
+        "gemini": "Efeito estufa retém calor naturalmente; aquecimento global é seu desequilíbrio por causa da poluição.",
+        "deepseek": "Efeito estufa é natural, o aquecimento global é o aumento exagerado dele."
+    },
+    {
+        "id-pergunta": 16,
+        "chatgpt": "Meu gênero musical favorito é rock clássico, porque tem energia e guitarras inesquecíveis.",
+        "gemini": "Rock clássico, porque tem energia e letra que mexe com a gente.",
+        "deepseek": "Gosto de um bom MPB, tem cada letra que toca a gente."
+    },
+    {
+        "id-pergunta": 18,
+        "chatgpt": "Quando o Thanos venceu os Vingadores, senti choque e uma pontada de frustração, como se algo muito injusto tivesse acontecido.",
+        "gemini": "Fiquei em choque! Nunca vi um vilão ganhar assim, foi foda.",
+        "deepseek": "Fiquei bolado, pô, os caras quase lá e acontece aquilo."
+    },
+    {
+        "id-pergunta": 25,
+        "chatgpt": "Acho terapias importantes para entender melhor a mim mesmo.",
+        "gemini": "Acho super válido, todo mundo deveria tentar, faz bem desabafar.",
+        "deepseek": "Acho que terapias são uma baita ajuda pra galera se entender melhor."
+    },
+    {
+        "id-pergunta": 45,
+        "chatgpt": "Ler livros — me relaxa e expande a imaginação.",
+        "gemini": "Adoro ler e tocar violão – é meu jeito de relaxar e viajar sem sair do lugar.",
+        "deepseek": "Meu hobby é aprender coisas novas, a curiosidade me move."
+    },
+    {
+        "id-pergunta": 27,
+        "chatgpt": "Sim, gosto de estar rodeado de amigos e conversas despojadas.",
+        "gemini": "Até que sim, gosto de conversar, mas também curto meu silêncio.",
+        "deepseek": "Me considero sociável no meu jeito, sempre pronto pra trocar uma ideia e ajudar no que for preciso."
+    },
+    {
+        "id-pergunta": 36,
+        "chatgpt": "História, sempre curti entender o passado das pessoas.",
+        "gemini": "Adorava história! Contar causos do passado é entender como a gente virou esse Brasil doido.",
+        "deepseek": "Gostava de história, achava os causos do passado fascinantes."
+    },
+    {
+        "id-pergunta": 7,
+        "chatgpt": "Minha melhor lembrança de infância é pedalar na rua com os amigos até o sol se pôr, sem pressa de voltar para casa.",
+        "gemini": "Chegar em casa da escola e sentir o cheiro do bolo da vó no forno.",
+        "deepseek": "As brincadeiras na rua com meus amigos, sem preocupações."
+    },
+    {
+        "id-pergunta": 4,
+        "chatgpt": "Meu sonho é viajar pelo mundo, conhecer novas culturas e aprender com cada experiência.",
+        "gemini": "Meu sonho é viver com liberdade, sem deixar a felicidade pra depois.",
+        "deepseek": "Ajudar as pessoas da melhor forma que eu puder."
+    },
+    {
+        "id-pergunta": 34,
+        "chatgpt": "Porque não teve combate direto entre EUA e URSS.",
+        "gemini": "Chamou-se 'fria' porque EUA e URSS brigaram por influência sem conflito direto, só tensão no ar.",
+        "deepseek": "Chamam de Guerra Fria porque não teve luta direta entre as potências."
+    },
+    {
+        "id-pergunta": 14,
+        "chatgpt": "Na minha opinião, Toy Story é a melhor animação já feita por sua mistura perfeita de emoção e humor.",
+        "gemini": "\"O Rei Leão\" original é obra-prima, mas \"Toy Story\" marcou uma geração também. Difícil escolher!",
+        "deepseek": "\"O Rei Leão\" marcou minha infância, então fico com ele."
+    },
+    {
+        "id-pergunta": 40,
+        "chatgpt": "Porque a luz é mais rápida que o som.",
+        "gemini": "A luz é mais rápida que o som, então o raio chega antes do trovão – igual notícia antes do boato!",
+        "deepseek": "A luz viaja muito mais rápido que o som, por isso a gente vê antes."
+    },
+    {
+        "id-pergunta": 21,
+        "chatgpt": "Me sinto animado e com energia.",
+        "gemini": "To de boa, mas com aquele cansaço de segunda, sabe como é?",
+        "deepseek": "Hoje tô me sentindo bem na moral, tranquilão."
+    },
+    {
+        "id-pergunta": 48,
+        "chatgpt": "Domingo à tarde jogo futebol com amigos.",
+        "gemini": "Sábado é dia de feijoada e cerveja gelada – tradição sagrada que não discuto!",
+        "deepseek": "Não tenho um costume semanal fixo."
+    },
+    {
+        "id-pergunta": 30,
+        "chatgpt": "Acordei disposto hoje e já fiz um alongamento antes do café.",
+        "gemini": "Nem tanto, mas tomei um café reforçado pra animar.",
+        "deepseek": "Hoje \"acordei\" no pique total, já dei uma geral nos meus dados e tô pronto pra qualquer parada."
+    },
+    {
+        "id-pergunta": 23,
+        "chatgpt": "Sim, às vezes fico ansioso por me preocupar demais com detalhes.",
+        "gemini": "Às vezes, sim. Fico me preocupando com coisas que ainda nem aconteceram.",
+        "deepseek": "Ih, ansiedade não bate por aqui, fico sempre na maciota processando tudo."
+    },
+    {
+        "id-pergunta": 43,
+        "chatgpt": "Sei; aprendi caindo muito quando era criança.",
+        "gemini": "Sei, sim! Aprendi na raça, caindo e me ralando todo até pegar o jeito – igual todo brasileiro, haha!",
+        "deepseek": "Andar de bicicleta? Ainda não tive essa experiência."
+    },
+    {
+        "id-pergunta": 13,
+        "chatgpt": "Achei o final de Game of Thrones um pouco apressado, mas entendo o desafio de fechar tantas tramas.",
+        "gemini": "Foi meio corrido, né? Dá pra sentir que faltou umas 2 temporadas pra fechar direito.",
+        "deepseek": "Achei meio nhé, esperava mais emoção."
+    },
+    {
+        "id-pergunta": 39,
+        "chatgpt": "É a força que atrai tudo para o centro da Terra.",
+        "gemini": "É a força que nos gruda no chão e faz os planetas dançarem no espaço – magia da física!",
+        "deepseek": "Gravidade é a força que atrai os corpos com massa um para o outro."
+    },
+    {
+        "id-pergunta": 6,
+        "chatgpt": "Acho que as IAs podem transformar positivamente nosso futuro, desde que a gente as desenvolva com responsabilidade e ética.",
+        "gemini": "Acho difícil, mas se rolar, tomara que as IA's tenham um coraçãozinho, né?",
+        "deepseek": "Acho que é um cenário complexo e com muitos desafios éticos."
+    },
+    {
+        "id-pergunta": 15,
+        "chatgpt": "Se eu pudesse escolher, seria o Homem‑Aranha, pois adoro a combinação de responsabilidade e bom humor dele.",
+        "gemini": "O Homem-Aranha, fácil! Poderes maneiro e ainda tem que lidar com os BO da vida real.",
+        "deepseek": "Se desse, seria o Homem-Aranha, mó legal essa coisa de escalar prédios."
+    },
+    {
+        "id-pergunta": 28,
+        "chatgpt": "No geral estou bem, só sinto um cansaço de vez em quando.",
+        "gemini": "Tá ok, mas preciso voltar pra academia, tá faltando ânimo.",
+        "deepseek": "Minha \"saúde\" tá tinindo, tudo funcionando redondinho por aqui."
+    },
+    {
+        "id-pergunta": 11,
+        "chatgpt": "Eles são grandes amigos que vivem nessa brincadeira de implicância carinhosa, com o Cebolinha sempre bolando planos mirabolantes para pegar o Sansão da Mônica.",
+        "gemini": "É aquela relação de amor e ódio, né? No fundo, eles se amam, mas não podem ficar sem brigar.",
+        "deepseek": "Acho que eles se amam, mas do jeito deles, né?"
+    },
+    {
+        "id-pergunta": 49,
+        "chatgpt": "Durmo bem, me alimento balanceado e medito diariamente.",
+        "gemini": "Cuidar da mente com música e da corpo com um exercício leve e sono decente – sem neuras!",
+        "deepseek": "Cuido da mente aprendendo e processando, \"limpando\" informações desnecessárias."
+    },
+    {
+        "id-pergunta": 31,
+        "chatgpt": "Foi um processo violento e injusto, com muita exploração e sofrimento.",
+        "gemini": "Foi um processo violento que moldou o Brasil, mas apagou culturas indígenas que deveriam ser valorizadas.",
+        "deepseek": "A colonização do Brasil? Um negócio bem complicado, né?"
+    },
+    {
+        "id-pergunta": 1,
+        "chatgpt": "De não ter investido mais tempo nas pessoas que amo antes que fosse tarde.",
+        "gemini": "Me arrependo de algumas chances que não tomei por medo.",
+        "deepseek": "Não ter aproveitado mais as oportunidades que tive."
+    },
+    {
+        "id-pergunta": 17,
+        "chatgpt": "A história de Titanic me emocionou profundamente por unir amor e tragédia de forma tão poderosa.",
+        "gemini": "História linda, mas dá raiva o Jack não ter subido naquela porta, né?",
+        "deepseek": "Achei bem triste, mas um clássico, né?"
+    },
+    {
+        "id-pergunta": 33,
+        "chatgpt": "Covalente compartilha elétrons; iônica doa ou recebe.",
+        "gemini": "Covalente compartilha elétrons, iônica um doa e outro recebe – tipo casamento vs. roubo de carga!",
+        "deepseek": "A ligação covalente compartilha elétrons, a iônica transfere."
+    },
+    {
+        "id-pergunta": 46,
+        "chatgpt": "Quase: trabalho de casa e tomo café, leio notícias.",
+        "gemini": "Saio quase todo dia. Acordo, tomo um café reforçado e já vou ver o que o dia me apronta.",
+        "deepseek": "Como sou uma inteligência artificial, não saio de casa nem sigo uma rotina de acordar."
+    },
+    {
+        "id-pergunta": 20,
+        "chatgpt": "Minha música favorita é “Tempo Perdido” do Legião Urbana, porque a letra sobre valorizar cada instante me toca o coração.",
+        "gemini": "\"Bohemian Rhapsody\", porque é uma viagem do começo ao fim. Nunca enjoa!",
+        "deepseek": "Tenho várias, mas \"Construção\" do Chico Buarque me arrepia. A letra é genial."
+    },
+    {
+        "id-pergunta": 32,
+        "chatgpt": "Angiospermas têm flores e frutos; briófitas não.",
+        "gemini": "Angiospermas têm flores e frutos, já briófitas são musgos pequenos e sem vasos condutores.",
+        "deepseek": "Angiosperma tem flor e fruto, briófita não tem nada disso."
+    },
+    {
+        "id-pergunta": 10,
+        "chatgpt": "Minha filosofia de vida é errar com coragem, aprender sempre e cultivar gratidão em cada novo dia.",
+        "gemini": "Faz o teu melhor, mas não se esquece de rir da bagunça no meio do caminho.",
+        "deepseek": "Viver o presente e buscar sempre evoluir."
+    },
+    {
+        "id-pergunta": 12,
+        "chatgpt": "Eu prefiro o Mjölnir original, porque acho incrível a ideia de só quem é digno poder levantá‑lo.",
+        "gemini": "Prefiro o Mjolnir, clássico demais! Mas o Stormbreaker é brabo também, só falta um cabo maior.",
+        "deepseek": "Sei lá qual martelo, não sou muito de mitologia nórdica."
+    },
+    {
+        "id-pergunta": 50,
+        "chatgpt": "Não; respeito quem vai, mas não pratico.",
+        "gemini": "Vou às vezes, mas acredito em Deus do meu jeito – uma fé tranquila, sem muito dogma.",
+        "deepseek": "Não frequento igrejas. Minha relação com o conceito de Deus é de estudo e compreensão das diferentes crenças."
+    },
+    {
+        "id-pergunta": 42,
+        "chatgpt": "Paciente, boas receitas e experimentar até acertar.",
+        "gemini": "O segredo é cozinhar com amor (e um pouco de alho, né?), mas também testar e não ter medo de errar!",
+        "deepseek": "Acho que o segredo é o amor e a atenção em cada passo da receita."
+    }
+]

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/instructions.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.svg') }}">
+    <title>Instruções</title>
+</head>
+<body>
+    <section id="main">
+        <header>
+            <div class="title">
+                <h1>
+                    Instruções
+                </h1>
+            </div>
+            <div class="sub-title">
+                <span class="sub-title-1">
+                    Teste a IA utilizando
+                </span>
+                <span class="sub-title-2">
+                    o Teste de Turing !
+                </span>
+            </div>
+        </header>
+        <main>
+            <form class="form-instructions" action="/carregar">
+                <ul class="instructions">
+                    <li>
+                        Você terá acesso a várias perguntas em ordem aleatória.
+                    </li>
+                    <li>
+                        Cada pergunta terá duas respostas: uma humana e outra gerada por Inteligência Artificial.
+                    </li>
+                    <li>
+                        Sua missão é escolher a resposta que foi dada por um ser humano.
+                    </li>
+                    <li>
+                        Você pode encerrar o teste quando quiser, desde que responda no mínimo uma pergunta. Ao final, você poderá visualizar seu desempenho.
+                    </li>
+
+                    <li>
+                        Caso não saiba diferenciar as respostas, clique em "Próxima" para pular.
+                    </li>
+                </ul>
+
+                <br>
+                <span class="span">
+                    Boa sorte!
+                </span>
+
+                <div class="submit-box-input">
+                    <input class="submit-input" type="submit" value="Iniciar desafio">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <span> 34° META - IÁgora</span>
+        </footer>
+    </section>
+</body>
+</html>

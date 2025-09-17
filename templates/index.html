@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.svg') }}">
+    <title>Entre</title>
+</head>
+<body>
+    <section id="main">
+        <header>
+            <div class="title">
+               <img id="logo" src="static/img/logocompleta.png" alt="Logo">
+            </div>
+            <div class="sub-title">
+                <span class="sub-title-1">
+                    Teste a inteligência articial!
+                </span>
+                <span class="sub-title-2">
+                    Você consegue desmascará-la?!
+                </span>
+            </div>
+        </header>
+        <main>
+            <form class="login" action="/cadastrar" method="POST">
+                <div class="name box-input">
+                    <div class="form-group">
+                        <input class="input" placeholder=" " type="text" id="name" name="name">
+                        <label class="label" for="name">Nome</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="input" placeholder=" " type="text" id="lastname" name="lastname">
+                        <label class="label" for="lastname">Sobrenome</label>
+                    </div>
+                </div>
+
+                <div class="gender box-input">
+                    <span class="label-text">Genero:</span>
+                    <div class="row-input">
+                        <input class="input-button" type="button" name="genderBtn" value="Masculino"></input>
+                        <input class="input-button" type="button" name="genderBtn" value="Feminino"></input>
+                        <input class="input-button" type="button" name="genderBtn" value="Outro"></input>
+                    </div>
+                </div>
+
+                <div class="age box-input">
+                    <span class="label-text">Idade:</span>
+                    <div class="row-input">
+                        <input class="input-button" type="button" name="ageBtn" value="Até 18 anos"></input>
+                        <input class="input-button" type="button" name="ageBtn" value="Até 31 anos"></input>
+                        <input class="input-button" type="button" name="ageBtn" value="+ 31 anos"></input>
+                    </div>
+                </div>
+
+                <div class="formation box-input custom-select">
+                    <div class="form-group">
+                        <input class="input customInput" placeholder=" " type="text" readonly id="formation" name="formation">
+                        <label class="label" for="formation">Formação</label>
+                        <img class="icon" src="static/img/formation.png">
+                    </div>
+                    <ul class="options">
+                        <li class="option">Ensino Fundamental</li>
+                        <li class="option">Ensino Médio</li>
+                        <li class="option">Curso Técnico</li>
+                        <li class="option">Graduação</li>
+                        <li class="option">Pós-graduação</li>
+                        <li class="option">Mestrado</li>
+                        <li class="option">Doutorado</li>
+                    </ul>
+                </div>
+
+                <div class="ocupation box-input custom-select">
+                    <div class="form-group">
+                        <input class="input customInput" placeholder=" " type="text" readonly id="ocupation" name="ocupation">
+                        <label class="label" for="ocupation">Ocupação</label>
+                        <img class="icon" src="static/img/ocupation.png">
+                    </div>
+                    <ul class="options">
+                        <li class="option">Saúde</li>
+                        <li class="option">Tecnologia</li>
+                        <li class="option">Educação</li>
+                        <li class="option">Finanças</li>
+                        <li class="option">Empreendedorismo</li>
+                        <li class="option">Engenharia</li>
+                        <li class="option">Outro</li>
+                    </ul>
+                </div>
+
+                <!-- Hidden inputs que serão enviados no POST -->
+                <input type="hidden" name="gender" id="genderValue">
+                <input type="hidden" name="age" id="ageValue">
+
+                <div class="submit box-input">
+                    <div class="block" id="block"></div>
+                    <input class="submit-input" type="submit" value="Entrar">
+                </div>
+            </form>
+        </main>
+
+        <div>
+            <br>
+            <p>Ficou interessado? <a href="/sobre">Conheça o projeto</a></p>
+        </div>
+
+        <footer>
+            <span>34° META - IÁgora</span>
+        </footer>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>

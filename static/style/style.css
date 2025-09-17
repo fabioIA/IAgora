@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #111827;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#main {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: solid 1px #C4C4C4;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin: 50px 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width: 120px;
+    max-width: 100%;
+}
+
+main {
+    flex-grow: 1;
+    width: 100%;  
+}
+
+footer {
+    text-align: center;
+    color: #00000060;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-title {
+    font-style: italic;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.box-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.input {
+    height: 44px;
+    font-size: 15px;
+    background: none;
+    color: #000;
+    border: 0.5px solid #CCCDCC80;
+    border-radius: 3px;
+    padding: 0 10px;
+    outline: none;
+    margin-top: 3px;
+}
+
+.form-group {
+    position: relative;
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+.label {
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    color: #6b7280;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background: #fff;
+    padding: 0 4px;
+}
+
+/* Label "sobe" quando input está focado ou preenchido */
+input:focus + .label,
+input:not(:placeholder-shown) + .label {
+    top: -8px;
+    left: 8px;
+    font-size: 0.75rem;
+    color: #0861c6;
+}
+
+.submit-input {
+    margin-top: 30px;
+    height: 42px;
+    background-color: #0861c6;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all 150ms;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-input:hover {
+    opacity: 0.85;
+}
+
+.icon {
+    width: 22px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    opacity: 0.55;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    #main {
+        margin: 20px 0;
+        padding: 15px;
+    }
+
+    #logo {
+        width: 90px;
+    }
+
+    .submit-input {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .input {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    footer {
+        font-size: 11px;
+    }
+}

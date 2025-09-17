@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/questions.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.svg') }}">
+    <title>Teste</title>
+</head>
+<body>
+    <section id="main">
+        <header>
+            <div class="title">
+                <h1 id="number">{{ count }}</h1>
+                <h1>° Pergunta</h1>
+            </div>
+        </header>
+        <main>
+            <form class="test">
+                <span class="question">
+                    {{ pergunta }}
+                </span>
+
+                <div class="prompt">
+                    <span class="span">Selecione a resposta humana:</span>
+                </div>
+
+                <div class="resp box-input">
+                    <textarea class="input input-resp" type="text" id="ia" name="resp-1" disabled>{{ ia }}</textarea>
+                </div>
+
+                <div class="resp box-input">
+                    <textarea class="input input-resp" type="text" id="humano" name="resp-2" disabled>{{ humano }}</textarea>
+                </div>
+
+                <div class="opinion box-input">
+                    <label class="label-input" for="opinion">Deixe a sua opinião (opcional)</label>
+                    <textarea class="input" placeholder="Escolhi essa opção porque..." type="text" id="opinion" name="opinion"></textarea>
+                </div>
+
+                <div class="submit box-input">
+                    <input class="submit-input" id="finish" type="button" value="Finalizar">
+                    <input class="submit-input" id="next" type="button" value="Próxima">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <span>34° META - IÁgora</span>
+        </footer>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/questions.js') }}"></script>
+</body>
+</html>
